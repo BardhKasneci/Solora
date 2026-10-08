@@ -54,7 +54,6 @@ svg {
     outline-offset: 3px; 
 }
 
-/* ============ BUTTONS ============ */
 .btn {
     display: inline-flex; 
     align-items: center; 
@@ -99,7 +98,6 @@ svg {
     font-size: 13.5px; 
 }
 
-/* ============ NAV ============ */
 .nav { 
     position: sticky; 
     top: 0; 
@@ -171,8 +169,6 @@ svg {
     color: var(--coral); 
 }
 
-
-/* ============ HERO ============ */
 .hero {
     position: relative; overflow: hidden;
     padding: 84px 0 88px;
@@ -183,7 +179,6 @@ svg {
     background-size: 40px 40px;
 }
 
-/* coral glow */
 .hero::before {
     content: ''; 
     position: absolute; 
@@ -197,7 +192,6 @@ svg {
     pointer-events: none;
 }
 
-/* soft white highlight behind headline */
 .hero::after {
     content: ''; 
     position: absolute; 
@@ -287,7 +281,6 @@ h1 {
     stroke-linejoin: round; 
 }
 
-/* ============ TELEMETRY CARD ============ */
 .tele { 
     background: var(--indigo); 
     border-radius: 6px; 
@@ -384,7 +377,6 @@ h1 {
     font-weight: 700; 
 }
 
-/* ============ STATS ============ */
 .stats { 
     padding: 26px 0 36px; 
     background: var(--slate); 
@@ -471,7 +463,6 @@ h1 {
   color: var(--mute);
 }
 
-/* ============ CARDS ============ */
 .cards { 
   display: grid; 
   grid-template-columns: repeat(3, 1fr); 
@@ -536,7 +527,6 @@ h1 {
   color: var(--mute);
 }
 
-/* ============ CHECKLIST ============ */
 .checklist { 
   display: grid; 
   gap: 10px; 
@@ -576,6 +566,138 @@ h1 {
   color: var(--mute);
   background: var(--line);
   border: 1px solid #d5dce6;
+}
+
+.cases { 
+  padding: 80px 0; 
+  background: var(--slate); 
+}
+
+.cases-head { 
+  margin-bottom: 32px; 
+}
+
+.cases-head h2 {
+  font-size: clamp(2rem, 4vw, 40px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -.03em;
+  color: var(--indigo);
+}
+
+.case {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  gap: 22px;
+  align-items: center;
+  padding: 26px;
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.case-meta { 
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+  margin-bottom: 18px; 
+}
+
+.chip {
+  padding: 5px 8px;
+  font: 700 11px/1 var(--mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--indigo);
+}
+
+.case-no {
+  font: 400 11px/1 var(--mono);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--mute2);
+}
+
+.case h3 {
+  max-width: 500px;
+  margin-bottom: 14px;
+  font-size: clamp(1.6rem, 2.8vw, 32px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+  color: var(--indigo);
+}
+
+.case-body > p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--mute);
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.metrics b {
+  display: block;
+  margin-bottom: 4px;
+  font: 600 20px/1 var(--font);
+  letter-spacing: -.01em;
+  color: var(--indigo);
+}
+
+.metrics b.coral { 
+  color: var(--coral); 
+}
+
+.metrics span {
+  font: 400 12px/1.3 var(--mono);
+  letter-spacing: .04em;
+  color: var(--mute2);
+}
+
+.case-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 25px;
+  font: 600 14px/1 var(--font);
+  color: var(--indigo);
+  transition: color .2s var(--ease), gap .2s var(--ease);
+}
+
+.case-link svg { 
+  width: 12px; 
+  height: 12px; stroke: 
+  currentColor; 
+  fill: none; 
+  stroke-width: 2.2; 
+  stroke-linecap: round; 
+  stroke-linejoin: round; 
+}
+
+.case-link:hover { 
+  color: var(--coral); 
+  gap: 10px; 
+}
+
+.case-img { 
+  background: var(--line); 
+  aspect-ratio: 4 / 3; 
+  overflow: hidden; 
+}
+
+.case-img img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  display: block; 
 }
 
 
