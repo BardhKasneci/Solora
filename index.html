@@ -246,7 +246,6 @@
   <section class="location" id="contact">
   <div class="wrap location-grid">
 
-    <!-- Left: copy + contact details -->
     <div class="location-info">
       <span class="eyebrow">Geographic Footprint</span>
       <h2>Prishtina Tech Hub HQ</h2>
@@ -283,7 +282,6 @@
       </a>
     </div>
 
-    <!-- Right: map card -->
     <figure class="map">
       <div class="map-bar">
         <span class="map-id"><i></i>PRISHTINA_HQ_RADAR</span>
@@ -291,7 +289,6 @@
       </div>
 
       <div class="map-view">
-        <!-- Replace src with your own map screenshot -->
         <img src="prishtina-map.jpg" alt="Aerial map of Prishtina showing the Solora headquarters" />
         <span class="map-label">Solora Core Labs</span>
         <div class="map-foot">
@@ -303,6 +300,64 @@
 
   </div>
 </section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+
+    <header class="quote-head">
+      <span class="eyebrow">Project Initiation</span>
+      <h2>Get a Direct Technical Quote</h2>
+      <p>Outline your platform specifications. Our Principal Systems Architect will reply with a scope evaluation and timeline within 24 business hours.</p>
+    </header>
+
+    <form class="form" action="#" method="post">
+      <div class="form-grid">
+
+        <div class="field">
+          <label for="name">Full Name <b>*</b></label>
+          <input id="name" name="name" type="text" placeholder="Alexander Vance" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Corporate Email <b>*</b></label>
+          <input id="email" name="email" type="email" placeholder="alexander@enterprise.com" required />
+        </div>
+
+        <div class="field">
+          <label for="tier">Target Architecture Tier</label>
+          <select id="tier" name="tier">
+            <option>Starter ( 200€ or 20€/month )</option>
+            <option selected>Business Web ( 500€ or 50€/month )</option>
+            <option>E-Commerce ( 800€ or 100€/month )</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="date">Target Launch Date</label>
+          <input id="date" name="date" type="text" placeholder="Q2 / 60-90 Days" />
+        </div>
+
+        <div class="field field--full">
+          <label for="scope">System Specifications &amp; Scope Details</label>
+          <textarea id="scope" name="scope" rows="4" placeholder="Describe current tech stack, traffic benchmarks, required integrations (e.g. ERP, Shopify Plus, Custom APIs), and deliverables..."></textarea>
+        </div>
+
+      </div>
+
+      <div class="form-foot">
+        <label class="check">
+          <input type="checkbox" name="nda" />
+          Mutual NDA required prior to code review
+        </label>
+        <button type="submit" class="form-btn">Transmit Scope
+          <svg viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z"/></svg>
+        </button>
+      </div>
+    </form>
+
+  </div>
+</section>
+
 
 <script src="price.js"></script>
 </body>
